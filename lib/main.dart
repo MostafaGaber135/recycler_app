@@ -10,7 +10,9 @@ class RecyclerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(),
+      theme: ThemeData(
+        fontFamily: 'Assistant',
+      ),
       debugShowCheckedModeBanner: false,
       home: const HomeView(),
     );
