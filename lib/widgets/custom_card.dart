@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:recycler_application/constants/app_colors.dart';
 import 'package:recycler_application/models/product_model.dart';
 
 class CustomCard extends StatelessWidget {
@@ -14,7 +15,7 @@ class CustomCard extends StatelessWidget {
           12,
         ),
         border: Border.all(
-          color: const Color(0xFF88a0b3),
+          color: AppColors.accent,
           width: 1.5,
         ),
       ),
@@ -49,9 +50,7 @@ class CustomCard extends StatelessWidget {
                     icon: const Icon(
                       FontAwesomeIcons.heart,
                       size: 24,
-                      color: Color(
-                        0XFF002e82,
-                      ),
+                      color:AppColors.primary,
                     ),
                     onPressed: () {},
                   ),
@@ -87,9 +86,7 @@ class CustomCard extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
-                    color: Color(
-                      0xFF23215d,
-                    ),
+                    color: AppColors.textSecondary,
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -100,9 +97,7 @@ class CustomCard extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
-                    color: Color(
-                      0xFF333164,
-                    ),
+                    color: AppColors.textPrimary,
                   ),
                 ),
                 Row(
